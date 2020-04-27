@@ -12,6 +12,7 @@ ENV LANGUAGE en_US.UTF-8
 
 ENV TZ=Europe/Berlin
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN echo LANG="en_US.UTF-8" > /etc/default/locale && echo LANGUAGE="en_US:en" >> /etc/default/locale
 
 VOLUME /etc/vdr 
 VOLUME /var/lib/video
