@@ -2,13 +2,13 @@
 
 ## git clone 
 ```bash 
-git clone https://github.com/weratyr/vdr.git && cd vdr
+git clone https://github.com/weratyr/docker-vdr.git && cd docker-vdr
 ```
 
 ## Docker build 
 This will build the docker vdr image which is based on a debian bullseye image from docker hub.
 ```bash
-docker build -t weratyr/vdr .
+docker build -t weratyr/docker-vdr .
 ```
 
 ## Docker volume
